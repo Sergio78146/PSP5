@@ -65,7 +65,7 @@ public class ClienteChat extends JFrame implements ActionListener {
         String nombre = JOptionPane.showInputDialog("Introduce tu nombre o nick:");
         SSLSocket socket = null;
         try {
-            System.setProperty("javax.net.ssl.trustStore", "ServerKeyStore.jks");
+            System.setProperty("javax.net.ssl.trustStore", "ClientTrustStore.jks");
             System.setProperty("javax.net.ssl.trustStorePassword", "123456");
             System.setProperty("javax.net.debug", "SSL, handshake"); 
 
